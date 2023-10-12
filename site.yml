@@ -38,6 +38,12 @@
       update_cache: yes
     when: ansible_distribution == "CentOS"
 
+  - name: start httpd (CentOS)
+    service:
+      name: httpd
+      state: started
+    when: ansible_distribution == "CentOS"  
+
 - hosts: db_servers
   become: true
   tasks:

@@ -54,7 +54,9 @@
       state: latest
       update_cache: yes
     when: ansible_distribution == "CentOS"
-    
+
+
+
   - name: copy html file for site
     copy:
      src: default_site.html
