@@ -8,4 +8,6 @@
 
 [workstations]
 10.0.2.15
-  
+
+[dockerhosts]
+10.0.2.4  
